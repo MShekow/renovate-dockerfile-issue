@@ -1,0 +1,1 @@
+# renovate-dockerfile-issue
