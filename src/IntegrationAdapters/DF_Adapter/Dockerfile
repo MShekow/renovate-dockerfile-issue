@@ -1,5 +1,5 @@
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0.403@sha256:b38da1961b1358940c634560747e09ef8047234e66c71033f19ac2e777f60240 AS build
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0.101@sha256:fe8ceeca5ee197deba95419e3b85c32744970b730ae11645e13f1cb74a848d98 AS build
 RUN echo foo
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0.10-noble-chiseled-extra@sha256:814d813ef87531c6f9d1f779ce40680c9cc499412db527519e62870be7e1dc4f AS final
+FROM mcr.microsoft.com/dotnet/aspnet:9.0.0-noble-chiseled-extra@sha256:e7662ee9385478d8be85fd99fbb04f10f3a10f837c5df53d8b3abd5b5ad09738 AS final
 RUN echo bar
